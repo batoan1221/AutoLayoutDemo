@@ -13,7 +13,6 @@
 		B667CA2C18F444B30041C79B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B667CA2A18F444B30041C79B /* InfoPlist.strings */; };
 		B667CA2E18F444B30041C79B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B667CA2D18F444B30041C79B /* main.m */; };
 		B667CA3218F444B30041C79B /* SLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B667CA3118F444B30041C79B /* SLNAppDelegate.m */; };
-		B667CA3518F444B30041C79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B667CA3318F444B30041C79B /* Main.storyboard */; };
 		B667CA3818F444B30041C79B /* SLNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B667CA3718F444B30041C79B /* SLNViewController.m */; };
 		B667CA3A18F444B30041C79B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B667CA3918F444B30041C79B /* Images.xcassets */; };
 		B667CA4118F444B30041C79B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B667CA4018F444B30041C79B /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		B667CA4318F444B30041C79B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B667CA2518F444B30041C79B /* UIKit.framework */; };
 		B667CA4B18F444B30041C79B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B667CA4918F444B30041C79B /* InfoPlist.strings */; };
 		B667CA4D18F444B30041C79B /* Autolayout2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B667CA4C18F444B30041C79B /* Autolayout2Tests.m */; };
+		B667CA5718F444D90041C79B /* SLNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B667CA5618F444D90041C79B /* SLNViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		B667CA2F18F444B30041C79B /* Autolayout2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Autolayout2-Prefix.pch"; sourceTree = "<group>"; };
 		B667CA3018F444B30041C79B /* SLNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLNAppDelegate.h; sourceTree = "<group>"; };
 		B667CA3118F444B30041C79B /* SLNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLNAppDelegate.m; sourceTree = "<group>"; };
-		B667CA3418F444B30041C79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B667CA3618F444B30041C79B /* SLNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLNViewController.h; sourceTree = "<group>"; };
 		B667CA3718F444B30041C79B /* SLNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLNViewController.m; sourceTree = "<group>"; };
 		B667CA3918F444B30041C79B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		B667CA4818F444B30041C79B /* Autolayout2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Autolayout2Tests-Info.plist"; sourceTree = "<group>"; };
 		B667CA4A18F444B30041C79B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B667CA4C18F444B30041C79B /* Autolayout2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Autolayout2Tests.m; sourceTree = "<group>"; };
+		B667CA5618F444D90041C79B /* SLNViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SLNViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +114,9 @@
 			children = (
 				B667CA3018F444B30041C79B /* SLNAppDelegate.h */,
 				B667CA3118F444B30041C79B /* SLNAppDelegate.m */,
-				B667CA3318F444B30041C79B /* Main.storyboard */,
 				B667CA3618F444B30041C79B /* SLNViewController.h */,
 				B667CA3718F444B30041C79B /* SLNViewController.m */,
+				B667CA5618F444D90041C79B /* SLNViewController.xib */,
 				B667CA3918F444B30041C79B /* Images.xcassets */,
 				B667CA2818F444B30041C79B /* Supporting Files */,
 			);
@@ -230,8 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B667CA3A18F444B30041C79B /* Images.xcassets in Resources */,
+				B667CA5718F444D90041C79B /* SLNViewController.xib in Resources */,
 				B667CA2C18F444B30041C79B /* InfoPlist.strings in Resources */,
-				B667CA3518F444B30041C79B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +281,6 @@
 				B667CA2B18F444B30041C79B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B667CA3318F444B30041C79B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B667CA3418F444B30041C79B /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		B667CA4918F444B30041C79B /* InfoPlist.strings */ = {
@@ -457,6 +449,7 @@
 				B667CA5218F444B30041C79B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B667CA5318F444B30041C79B /* Build configuration list for PBXNativeTarget "Autolayout2Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +458,7 @@
 				B667CA5518F444B30041C79B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
